@@ -8,6 +8,11 @@ function App() {
         <img src={freecodecampImg} alt="logo-freecodecamp" />
       </div>
       <Input>hola desde noteboock</Input>
+      <ul>
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+      </ul>
 
     </div>
   )
