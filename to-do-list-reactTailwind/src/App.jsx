@@ -1,18 +1,16 @@
-import freecodecampImg from './assets/img/freecodecamp.png'
-import { Input } from './components/Input'
+import { FreecodeImg } from './components/FreecodeImg'
+import { ListaDeTareas } from './components/ListaDeTareas'
 
 function App() {
   return (
-    <div id="aplicacion-tareas">
-      <div id="contenedor-img-freecodecamp">
-        <img src={freecodecampImg} alt="logo-freecodecamp" />
+    <div className="flex flex-col items-center" id="aplicacion-tareas">
+      <FreecodeImg />
+      <div id="conteiner-lista-tareas" className='conteiner-lista-tareas'>
+        <h1 className='text-[#1b1b32] text-[25px] font-Monserrat font-bold text-center my-[20px]'>
+          Mis tareas
+        </h1>
+        <ListaDeTareas />
       </div>
-      <Input>hola desde noteboock</Input>
-      <ul>
-        <li>1</li>
-        <li>2</li>
-        <li>3</li>
-      </ul>
 
     </div>
   )

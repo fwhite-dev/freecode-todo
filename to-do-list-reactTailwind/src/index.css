@@ -3,15 +3,27 @@
 @tailwind utilities;
 
 @layer base {
+  html {
+    @apply font-Lato;
+  }
   body {
-    @apply bg-[#1b1b32] mt-[40px];
+    @apply bg-[#1b1b32] mt-[40px] text-white;
   }
 }
-
-/* comentario git */
-
-/* comantario 3  */
-/* DA
- */
-/* dasdasdasdadddddddddddddddd
-aaaaaaaaaaaaaaaa */
+@layer components {
+  .conteiner-lista-tareas {
+    @apply w-[600px] h-[500px] bg-[#d0d0d5] m-[10px] p-[25px] rounded-3xl;
+  }
+  .contenedor-tarea {
+    @apply w-[500px] min-h-[65px] bg-[#1b1b32] my-[5px] pt-[8px] pr-[15px] pb-[8px] pl-[20px] flex justify-between items-center rounded-[7px] border-[1px] border-white cursor-pointer;
+  }
+  .tarea-formulario {
+    @apply flex flex-wrap  items-center justify-center;
+  }
+  .tarea-input {
+    @apply w-[350px] text-[18px] bg-white pt-[14px] pr-[32px] pb-[14px] pl-[16px] rounded-lg border-[2px] border-[#00471b] outline-none;
+  }
+  .tarea-boton {
+    @apply p-[16px] font-Roboto text-[18px] border-none cursor-pointer rounded-sm outline-none bg-[#00471b] text-white;
+  }
+}
